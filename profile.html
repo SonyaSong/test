@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>CPE LABORATORY</title>
+	<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="Javascript/Flot/excanvas.js"></script>
+	<![endif]-->
+    <link rel="icon" type="image/jpg" href="Images/lab_icon_favicon.png" />
+	<!-- The Main CSS File -->
+	<link rel="stylesheet" href="CSS/style.css" />
+	<!-- jQuery -->
+	<script src="Javascript/jQuery/jquery-1.7.2.min.js"></script>
+	<!-- Flot -->
+	<script src="Javascript/Flot/jquery.flot.js"></script>
+	<script src="Javascript/Flot/jquery.flot.resize.js"></script>
+	<script src="Javascript/Flot/jquery.flot.pie.js"></script>
+	<!-- DataTables -->
+	<script src="Javascript/DataTables/jquery.dataTables.min.js"></script>
+	<!-- ColResizable -->
+	<script src="Javascript/ColResizable/colResizable-1.3.js"></script>
+	<!-- jQuryUI -->
+	<script src="Javascript/jQueryUI/jquery-ui-1.8.21.min.js"></script>
+	<!-- Uniform -->
+	<script src="Javascript/Uniform/jquery.uniform.js"></script>
+	<!-- Tipsy -->
+	<script src="Javascript/Tipsy/jquery.tipsy.js"></script>
+	<!-- Elastic -->
+	<script src="Javascript/Elastic/jquery.elastic.js"></script>
+	<!-- ColorPicker -->
+	<script src="Javascript/ColorPicker/colorpicker.js"></script>
+	<!-- SuperTextarea -->
+	<script src="Javascript/SuperTextarea/jquery.supertextarea.min.js"></script>
+	<!-- UISpinner -->
+	<script src="Javascript/UISpinner/ui.spinner.js"></script>
+	<!-- MaskedInput -->
+	<script src="Javascript/MaskedInput/jquery.maskedinput-1.3.js"></script>
+	<!-- ClEditor -->
+	<script src="Javascript/ClEditor/jquery.cleditor.js"></script>
+	<!-- Full Calendar -->
+	<script src="Javascript/FullCalendar/fullcalendar.js"></script>
+	<!-- Color Box -->
+	<script src="Javascript/ColorBox/jquery.colorbox.js"></script>
+	<!-- Kanrisha Script -->
+	<script src="Javascript/kanrisha.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+	.tables th, .stats_info{
+		color:#696161;
+	}
+</style>
+</head>
+<body>
+	<header class="main_header">
+		<div class="wrapper">
+			<div class="logo">
+				<a href="#" title="CPE LABORATOYR">
+					<img src="Images/logo.png" alt="CPE LABORATOYR" />
+				</a>
+			</div>
+
+		</div>
+	</header>
+
+	<div class="wrapper small_menu">
+		<ul class="menu_small_buttons">
+			<li><a title="General Info" class="i_22_forms" href="index.html"></a></li>
+			<li><a title="Your Messages" class="i_22_charts" href="grade.html"></a></li>
+			<li><a title="Kit elements" class="i_22_dashboard smActive" href="profile.html"></a></li>
+			<li><a title="Some Rows" class="i_22_tables bdcC" href="#"></a></li>
+		</ul>
+	</div>
+
+	<div class="wrapper contents_wrapper">
+		
+		<aside class="sidebar">
+			<ul class="tab_nav">
+				<li class="i_32_formsw">
+					<a href="index.html" title="My Task">
+						<span class="tab_label" style="color:#f9f9f9">Tasks</span>
+						<span class="tab_info" style="color:#f9f9f9">My Task</span>
+					</a>
+				</li>
+				<li class="i_32_chartsw">
+					<a href="grade.html" title="View Score">
+						<span class="tab_label" style="color:#f9f9f9">Grade</span>
+						<span class="tab_info" style="color:#f9f9f9">View Score</span>
+					</a>
+				</li>
+				<li class="active_tab i_32_dashboard">
+					<a href="profile.html" title="My Information">
+						<span class="tab_label">Profile</span>
+						<span class="tab_info">My Info</span>
+					</a>
+				</li>
+				<li class="bdcC i_32_tablesw">
+					<a href="#" title="Exit System">
+						<span class="tab_label" style="color:#f9f9f9">Logout</span>
+						<span class="tab_info" style="color:#f9f9f9">Exit System</span>
+					</a>
+				</li>
+			</ul>
+		</aside>
+        
+		<div class="contents">
+			<div class="grid_wrapper">
+
+				<div class="g_6 contents_header">
+					<h3 class="i_16_dashboard tab_label">Profile</h3>
+					<div><span class="label">User Information</span></div>
+				</div>
+				<!-- 
+				<div class="g_6 contents_options">
+					<div class="simple_buttons">
+						<div class="bwIcon i_16_help">Help</div>
+					</div>
+					<div class="simple_buttons">
+						<div class="bwIcon i_16_settings">Settings</div>
+						<div class="buttons_arrow">
+							 Drop Menu 
+							<ul class="drop_menu menu_with_icons right_direction">
+								<li>
+									<a class="i_16_add" href="#" title="New Flie">
+										<span class="label">New File</span>
+									</a>									
+								</li>
+								<li>
+									<a class="i_16_progress" href="#" title="2 Files Left">
+										<span class="label">Files Left</span>
+										<span class="small_count">2</span>
+									</a>
+								</li>
+								<li>
+									<a class="i_16_files" href="#" title="Browse Files">
+										<span class="label">Browse Files</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>-->
+
+				<div class="g_12 separator"><span></span></div>
+
+				<!-- Personal Information -->
+				<div class="g_12">
+					<div class="widget_header">
+						<h4 class="widget_header_title wwIcon i_16_dashboard">Personal Information</h4>
+					</div>
+					<div class="widget_contents noPadding">
+						<table class="tables">
+
+							<tbody>
+								<tr>
+									<th width="40%">Name</th>
+									<td width="60%">Dot Dot</td>	
+								</tr>
+								<tr>
+									<th>Student ID</th>
+									<td>P1234567</td>
+								</tr>
+								<tr>
+									<th>Year</th>
+									<td>1</td>
+								</tr>
+								<tr>
+									<th>School</th>
+									<td>ESAP</td>
+								</tr>
+								<tr>
+									<th>Specialized Subject</th>
+									<td>Computer Program</td>
+								</tr>
+								<tr>
+									<th>Email</th>
+									<td>p1234567@ipm.edu.mo</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<div class="g_12 separator"><span></span></div>
+
+				<!-- Statistical data -->
+				<div class="g_4">
+					<div class="big_stats visitor_stats">
+						A
+					</div>
+					<h5 class="stats_info">Average Grade</h5>
+				</div>
+				<div class="g_4">
+					<div class="big_stats tickets_stats">
+						23
+					</div>
+					<h5 class="stats_info">Completed Tasks</h5>
+				</div>
+				<div class="g_4">
+					<div class="big_stats users_stats">
+						3
+					</div>
+					<h5 class="stats_info">Uncompleted Tasks</h5>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+	<div class="dialog dConf" title="Logout"><span class="label lwParagraph" style="font-size: 110%">Are you sure you want to logout this system?</span></div>
+	
+	<footer>
+		<div class="wrapper">
+			<span class="copyright">
+				© 2016 Macao Polytechnic Institute. All Rights Reserved. Designed By Macao Polytechnic Institute
+			</span>
+		</div>
+	</footer>
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

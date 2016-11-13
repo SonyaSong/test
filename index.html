@@ -1,0 +1,223 @@
+﻿<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>CPE LABORATORY</title>
+	<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="Javascript/Flot/excanvas.js"></script>
+	<![endif]-->
+    <link rel="icon" type="image/jpg" href="Images/lab_icon_favicon.png" />
+	<link rel="stylesheet" href="CSS/style.css" />
+	<!-- jQuery -->
+	<script src="Javascript/jQuery/jquery-1.7.2.min.js"></script>
+	<!-- Flot -->
+	<script src="Javascript/Flot/jquery.flot.js"></script>
+	<script src="Javascript/Flot/jquery.flot.resize.js"></script>
+	<script src="Javascript/Flot/jquery.flot.pie.js"></script>
+	<!-- DataTables -->
+	<script src="Javascript/DataTables/jquery.dataTables.min.js"></script>
+	<!-- ColResizable -->
+	<script src="Javascript/ColResizable/colResizable-1.3.js"></script>
+	<!-- jQuryUI -->
+	<script src="Javascript/jQueryUI/jquery-ui-1.8.21.min.js"></script>
+	<!-- Uniform -->
+	<script src="Javascript/Uniform/jquery.uniform.js"></script>
+	<!-- Tipsy -->
+	<script src="Javascript/Tipsy/jquery.tipsy.js"></script>
+	<!-- Elastic -->
+	<script src="Javascript/Elastic/jquery.elastic.js"></script>
+	<!-- ColorPicker -->
+	<script src="Javascript/ColorPicker/colorpicker.js"></script>
+	<!-- SuperTextarea -->
+	<script src="Javascript/SuperTextarea/jquery.supertextarea.min.js"></script>
+	<!-- UISpinner -->
+	<script src="Javascript/UISpinner/ui.spinner.js"></script>
+	<!-- MaskedInput -->
+	<script src="Javascript/MaskedInput/jquery.maskedinput-1.3.js"></script>
+	<!-- ClEditor -->
+	<script src="Javascript/ClEditor/jquery.cleditor.js"></script>
+	<!-- Full Calendar -->
+	<script src="Javascript/FullCalendar/fullcalendar.js"></script>
+	<!-- Color Box -->
+	<script src="Javascript/ColorBox/jquery.colorbox.js"></script>
+	<!-- Kanrisha Script -->
+	<script src="Javascript/getTask.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+	.error{
+		color:#f1efef;
+		font-weight: bolder;
+	}
+	.simple_buttons,.tables th{
+		font-size: medium;
+		font-weight: bolder;
+	}
+	.simple_buttons a{
+		color:#4c4c4c;
+	}
+	.tables th{
+		font-size: medium;
+		font-weight: bolder;
+		color:#4c4c4c;
+	}
+	.tables td {
+		line-height: 0;
+	}
+</style>
+</head>
+
+<body>
+	<header class="main_header">
+		<div class="wrapper">
+			<div class="logo">
+				<a href="#" title="Kanrisha Home">
+					<img src="Images/logo.png" alt="kanrisha_logo" />
+				</a>
+			</div>
+
+		</div>
+	</header>
+
+	<div class="wrapper small_menu">
+		<ul class="menu_small_buttons">
+			<li><a title="General Info" class="i_22_forms smActive" href="index.html"></a></li>
+			<li><a title="Your Messages" class="i_22_charts" href="grade.html"></a></li>
+			<li><a title="Kit elements" class="i_22_dashboard" href="profile.html"></a></li>
+			<li><a title="Some Rows" class="i_22_tables" href="logout.html"></a></li>
+		</ul>
+	</div>
+
+	<div class="wrapper contents_wrapper">
+		
+		<aside class="sidebar">
+			<ul class="tab_nav">
+				<li class="active_tab i_32_forms">
+					<a href="index.html" title="My Task">
+						<span class="tab_label">Tasks</span>
+						<span class="tab_info">My Task</span>
+					</a>
+				</li>
+				<li class="i_32_chartsw">
+					<a href="grade.html" title="View Score">
+						<span class="tab_label" style="color:#f9f9f9">Grade</span>
+						<span class="tab_info" style="color:#f9f9f9">View Score</span>
+					</a>
+				</li>
+				<li class="i_32_dashboardw">
+					<a href="profile.html" title="My Information">
+						<span class="tab_label" style="color:#f9f9f9">Profile</span>
+						<span class="tab_info" style="color:#f9f9f9">My Info</span>
+					</a>
+				</li>
+				<li class="i_32_tablesw">
+					<a href="logout.html" title="Exit System">
+						<span class="tab_label" style="color:#f9f9f9">Logout</span>
+						<span class="tab_info" style="color:#f9f9f9">Exit System</span>
+					</a>
+				</li>
+			</ul>
+		</aside>
+
+		<div class="contents">
+			<div class="grid_wrapper">
+
+				<div class="g_6 contents_header">
+					<h3 class="i_16_forms tab_label">Tasks</h3>
+					<div><span class="label">Tasks Information</span></div>
+				</div>
+
+				<div class="separator g_12"><span></span></div>
+				<!--Warming-->
+
+				<div class="g_12"><div class="error iDialog">Plaese finish your tasks before deadline.<a href="#" style="text-decoration: underline;color: #2f14ff;">I GOT IT</a></div></div>
+
+				<!--get new task-->
+				<div class="g_2 contents_header"></div>
+				<div class="g_4 contents_header">
+					<h3 class="i_16_forms tab_label">My Tasks:<span style="color:red;">3/5</span></h3>
+					<div><span class="label">You can pick up 5 tasks at most.</span></div>
+				</div>
+				 
+				<div class="g_4 contents_options">
+					<div class="simple_buttons">
+						<div class="bwIcon i_16_help bdcC" style="font-size: large">Get new task</div>
+						<div class="dialog dConf" title="Get new task"><span class="label lwParagraph">Are you sure you want to pick up a new task?</span></div>
+					</div>
+				</div>
+                 <div class="g_2 contents_header"></div>
+
+				<div class="g_12 separator"><span></span></div>
+
+               <!-- uncompleted tasks -->
+				<div class="g_12">
+					<div class="widget_header">
+						<h4 class="widget_header_title wwIcon i_16_forms">My Tasks</h4>
+					</div>
+					<div class="widget_contents noPadding">
+						<table class="tables">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>Title</th>
+									<th>Date</th>
+									<th width="15">Percentage</th>
+									<th width="15%"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>#9543</td>
+									<td>HAHAHAHAHA</td>
+									<td>2222/22/22</td>
+									<td>10%</td>
+									<td align="center"><!--valign="center"-->
+									<div class="simple_buttons">
+									<a href="task.html"><div>Work!</div></a>
+									</div>
+									</td>
+								</tr>
+								<tr>
+									<td>#4564</td>
+									<td>OLA</td>
+									<td>3333/33/33</td>
+									<td>50%</td>
+									<td align="center"><!--valign="center"-->
+									<div class="simple_buttons">
+									<a href="task.html"><div>Work!</div></a>
+									</div>
+									</td>
+								</tr>
+								<tr>
+									<td>#5665</td>
+									<td>DOTDOTDOT</td>
+									<td>4444/44/44</td>
+									<td>0%</td>
+									<td align="center"><!--valign="center"-->
+									<div class="simple_buttons">
+									<a href="task.html"><div>Work!</div></a>
+									</div>
+									</td>
+								</tr>
+								
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<footer>
+		<div class="wrapper">
+			<span class="copyright">
+				© 2016 Macao Polytechnic Institute. All Rights Reserved. Designed By Macao Polytechnic Institute
+			</span>
+		</div>
+	</footer>
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>
